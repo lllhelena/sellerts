@@ -1,0 +1,237 @@
+extends layouts/changed
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.container 
+		.store-inner 
+			.tabs
+				.tabs-triggers
+					.tabs-triggers__item.tabs-triggers__item--active Products
+					.tabs-triggers__item Reviews
+				.tabs-content
+					.tabs-content__item.tabs-content__item--active
+						.content-top
+							.search 
+								input.search__input(placeholder="Search")
+								button.search-button(type="submit")
+									.search-button__icon 
+										img(src="images/main-store/search.svg", alt="")
+							.simple-select-wrap
+								select.js-simple-select(name="" data-placeholder="Sort by: default")
+									option
+									option(value="sbd") Sort by: default
+									option(value="pas") Price: ascending
+									option(value="pds") Price: descending
+									option(value="az") Product name: A-Z
+									option(value="az") Product name: Z-A
+								.simple-select-items-wrapper
+						.cards
+							.card 
+								.card__pic 
+									img(alt="") 
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img(alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img(alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img(alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img(alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							.card 
+								.card__pic 
+									img( alt="")
+								.card__name Name
+								.card__desc Description in one or more lines
+								.card__price 100 $
+							
+							
+					.tabs-content__item
+						.reviews-cards
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/like-review.svg", alt="")
+									.review-card__top-date 6 мая 2022
+								.review-card__text I bought it for the first time but I am happy. everything is fine, cheeto works great. They have been supportive from the first day of my purchase. I would definitely buy again! <3
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/dislike-review.svg", alt="")
+									.review-card__top-date 6 января 2022
+								.review-card__text Scam nothing works fake loader and fake key (:
+								.review-card__answer 
+									.review-card__answer-content  All work, see status on site. I want scam me and write negative rewiev
+									.review-card__answer-from — reply from the (Название)
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/like-review.svg", alt="")
+									.review-card__top-date 6 мая 2022
+								.review-card__text I bought it for the first time but I am happy. everything is fine, cheeto works great. They have been supportive from the first day of my purchase. I would definitely buy again! <3
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/dislike-review.svg", alt="")
+									.review-card__top-date 6 января 2022
+								.review-card__text Scam nothing works fake loader and fake key (:
+								.review-card__answer 
+									.review-card__answer-content  All work, see status on site. I want scam me and write negative rewiev
+									.review-card__answer-from — reply from the (Название)
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/like-review.svg", alt="")
+									.review-card__top-date 6 мая 2022
+								.review-card__text I bought it for the first time but I am happy. everything is fine, cheeto works great. They have been supportive from the first day of my purchase. I would definitely buy again! <3
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/dislike-review.svg", alt="")
+									.review-card__top-date 6 января 2022
+								.review-card__text Scam nothing works fake loader and fake key (:
+								.review-card__answer 
+									.review-card__answer-content  All work, see status on site. I want scam me and write negative rewiev
+									.review-card__answer-from — reply from the (Название)
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/dislike-review.svg", alt="")
+									.review-card__top-date 6 января 2022
+								.review-card__text Scam nothing works fake loader and fake key (:
+								.review-card__answer 
+									.review-card__answer-content  All work, see status on site. I want scam me and write negative rewiev
+									.review-card__answer-from — reply from the (Название)
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/like-review.svg", alt="")
+									.review-card__top-date 6 мая 2022
+								.review-card__text I bought it for the first time but I am happy. everything is fine, cheeto works great. They have been supportive from the first day of my purchase. I would definitely buy again! <3
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+							.review-card
+								.review-card__top
+									.review-card__top-sign 
+										img(src="images/store-reviews/dislike-review.svg", alt="")
+									.review-card__top-date 6 января 2022
+								.review-card__text Scam nothing works fake loader and fake key (:
+								.review-card__answer 
+									.review-card__answer-content  All work, see status on site. I want scam me and write negative rewiev
+									.review-card__answer-from — reply from the (Название)
+								.review-card__status
+									.review-card__status-img 
+										img(src="images/store-reviews/verif.svg", alt="")
+									.review-card__status-val Verified Purchase
+
+
+
+
+
+				.pagination
+					.pagination-prev
+						.pagination-prev__arrow 
+							img(src="images/pagination/arrow-left.svg", alt="")
+						.pagination-prev__name PREV
+					ul.pagination-list
+						li.pagination-li 1
+						li.pagination-li.pagination-li--active 2
+						li.pagination-li 3
+					.pagination-next
+						
+						.pagination-next__name NEXT
+						.pagination-next__arrow 
+							img(src="images/pagination/arrow-right.svg", alt="")
+				

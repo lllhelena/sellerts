@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css?v=1.00000001" rel="stylesheet">
+    <script>
+      // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+      let vh = window.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      // We listen to the resize event
+      window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+      
+    </script>
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <div class="header-placeholder"></div>
+    <header class="site-header">
+      <div class="container header-container"><a class="header-logo" href="/sellerts/build"><img src="images/header/header-logo.svg" alt=""></a>
+        <nav class="menu">
+          <div class="menu__list"><a class="menu__link">Options</a><a class="menu__link">Prices</a><a class="menu__link">Payments</a><a class="button-blue header-button--mob button-blue--signup">Sign up</a></div>
+        </nav>
+        <div class="header-right"><a class="sign-in" href="">Sign in</a><a class="button-blue button-blue--signup header-button" href="">Sign up</a>
+          <div class="sh-burger"><span></span></div>
+        </div>
+      </div>
+    </header>
+    <main class="main"><img class="top-decor" src="images/top-decor.svg" alt="">
+      <div class="container"> 
+        <section class="promo">
+          <div class="promo-left">
+            <h1 class="promo-left__title">Easy way to sell <br> digital products</h1>
+            <p class="promo-left__desc">No monthly payments, we take only <br>  a small percentage of each sale </p>
+          </div><a class="button-blue button-blue--start">Start for free</a>
+        </section>
+        <section class="sellerts">
+          <h3 class="sellerts__title">Sellerts is a powerful functionality designed to meet your needs</h3>
+          <div class="sellerts-row">
+            <div class="sellerts-row__info sellerts-row__info--1">
+              <div class="sellerts-row__info-name">Pages and Products</div>
+              <div class="sellerts-row__info-command">Sell your digital products&nbsp;anywhere</div>
+              <div class="sellerts-row__info-desc">Sell anywhere with payment links or use the internal online store that you can customize to your needs.</div>
+            </div><img class="sellerts-row__img" src="images/sell-1.jpg" alt="">
+          </div>
+          <div class="sellerts-row sellerts-row--2">
+            <div class="sellerts-row__info sellerts-row__info--right">
+              <div class="sellerts-row__info-name">Extra Bonuses</div>
+              <div class="sellerts-row__info-command">Buy seller's goods at a discount</div>
+              <div class="sellerts-row__info-desc">Sellerts has an agency program, through which you can buy the seller's goods in bulk at a discount set by the seller for an agent.</div>
+            </div><img class="sellerts-row__img sellerts-row__img--2" src="images/sell-2.jpg" alt="">
+          </div>
+        </section>
+        <section class="whyus">
+          <div class="whyus-inner">
+            <div class="whyus-left">
+              <h6 class="whyus__title">why us?</h6>
+              <p class="whyus-left__text">No subscriptions or monthly payments</p><a class="button-blue button-blue--mt40" href="">Sign up</a>
+            </div>
+            <div class="whyus-right"> 
+              <div class="whyus-right__percent">3%</div>
+              <div class="whyus-right__text">Use the Sellerts powerful functionality and pay only for successful deals</div>
+            </div>
+          </div>
+        </section>
+        <div class="sellerts-row sellerts-row--mb46">
+          <div class="sellerts-row__info sellerts-row__info--3">
+            <div class="sellerts-row__info-name">Analytics and Reports</div>
+            <div class="sellerts-row__info-command">Increase the efficiency of your income</div>
+            <div class="sellerts-row__info-desc">Drive growth with built-in CRM and use analytics to make informed business decisions. View reports, user predictions, report tracking and see how customers interact with your store. </div>
+          </div><img class="sellerts-row__img sellerts-row__img--mr0" src="images/sell-3.jpg" alt="">
+        </div>
+        <div class="sellerts-row sellerts-row--2">
+          <div class="sellerts-row__info sellerts-row__info--right">
+            <div class="sellerts-row__info-name">Accepting payments</div>
+            <div class="sellerts-row__info-command">No need to worry about payment processing</div>
+            <div class="sellerts-row__info-desc">Sellerts uses the latest payment processing technology and ensures that your payment is processed at any time with the lowest possible transaction fees.</div>
+          </div><img class="sellerts-row__img sellerts-row__img--2" src="images/sell-4.jpg" alt="">
+        </div>
+        <section class="start">
+          <h3 class="start__title">Start selling your digital products today</h3>
+          <p class="start__subtitle">Access tools designed to help you launch and scale your digital products production business</p><a class="button-blue button-blue--mt56">Start for free</a>
+        </section>
+        <div class="collect">
+          <div class="collect-text">Collect earnings directly in your <br> bank account, or crypto wallet</div>
+          <div class="collect-slider js-collect-slider">
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/stripe.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/coin.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/skrill.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/paypal.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/webmoney.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/stripe.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/coin.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/skrill.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/paypal.svg" alt=""></div>
+            </div>
+            <div class="collect-slide">
+              <div class="collect-slide-inner"><img class="slide-img" src="images/collect-slider/webmoney.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="sf-inner">
+          <div class="sf-col"><a class="sf-logo" href="/"><img src="images/footer/sf-logo.svg" alt=""></a>
+            <div class="sf-copyright">©2022 Sellerts. <br> All rights reserved.</div>
+          </div>
+          <div class="sf-col">
+            <div class="sf-col__name">FOR USERS</div><a class="sf-col__item" href="">Options</a><a class="sf-col__item" href="">Prices</a><a class="sf-col__item" href="">Payments </a>
+          </div>
+          <div class="sf-col">
+            <div class="sf-col__name">DOCUMENTS</div><a class="sf-col__item" href="">Confidentiality</a><a class="sf-col__item" href="">Terms</a>
+          </div>
+          <div class="sf-col"> 
+            <div class="sf-col__name">SUPPORT</div><a class="sf-col__item" href="">Telegram</a><a class="sf-col__item" href="">Discord</a><a class="sf-col__item" href="mailto: mail@mail.com">mail@mail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

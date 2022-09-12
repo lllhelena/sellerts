@@ -1,0 +1,93 @@
+extends layouts/changed
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.container 
+		.product-inner
+			.product-left
+				.product-info
+					.product-info__img 
+						img(alt="")
+					.product-info__inner 
+						.product-name Product Name
+						.product-numbers
+							.product-numbers__sales 32 sales
+							.rating.product-numbers__rating
+								.rating-counter
+									.rating-counter__img
+										img(src="images/product-card/like.svg", alt="")
+									.rating-counter__val 80
+								.rating-counter
+									.rating-counter__img
+										img(src="images/product-card/dislike.svg", alt="")
+									.rating-counter__val 10
+					
+				.product-desc.product-desc--mt32 Описание в одну или несколько строк, может быть две, или три строки. Большое большое описание.
+			.product-right
+				.product-card.js-product-card-steps
+					.product-card-step
+						.product-name  Product Name
+						.product-card__text Select the product you want to buy
+						.product-card__tariffs
+							label.product-card__tariff-wrap
+								input(type="radio", name="product-radio-1")
+								.product-card__tariff.product-card__row
+									.product-card__tariff-name Variants Legacy - 1 Day
+									.product-card__tariff-price $5.00
+							label.product-card__tariff-wrap
+								input(type="radio", name="product-radio-1")
+								.product-card__tariff
+									.product-card__tariff-name Legacy - Week
+									.product-card__tariff-price $15.00
+							label.product-card__tariff-wrap
+								input(type="radio", name="product-radio-1")
+								.product-card__tariff
+									.product-card__tariff-name Legacy - Month
+									.product-card__tariff-price $28.00
+						.button-wrap
+							button.button-blue.js-slick-next.button-blue--fs20 Continue
+				
+					.product-card-step
+						.product-name  Product Name
+						.product-card__text Enter details
+						.product-card__tariffs
+							.product-card__tariff.product-card__row.field-activ
+								input.product-card__tariff-name.field-activ__input(placeholder="Promo Code")
+								button.button-blue.button-blue--promo Activate
+							
+							.product-card__tariff.product-card__row.field-activ
+								input.product-card__tariff-name.field-email__input(placeholder="Email")
+							
+						.button-wrap
+							button.button-blue.js-slick-next.button-blue--fs20 Continue
+							button.button-blue.button-blue--transparent.js-slick-prev.button-blue--fs20 Back
+						
+
+					.product-card-step
+						.product-name  Product Name
+						.product-card__text Choose payment system
+						.product-card__tariffs
+							label.product-card__tariff-wrap
+								input(type="radio", name="product-radio-3")
+								.product-card__tariff.product-card__row
+									.product-card__tariff-name Stripe
+									
+									.product-card__tariff-price $28.00
+									.product-card__tariff-subtitle Pay with credit card, debit card, and more
+							label.product-card__tariff-wrap
+								input(type="radio", name="product-radio-3")
+								.product-card__tariff
+									.product-card__tariff-name Legacy - Week
+									.product-card__tariff-price $28.00
+									.product-card__tariff-subtitle Pay using crypto: BTC, ETH, and more
+								
+						.button-wrap
+							button.button-blue.button-blue--fs20 Buy

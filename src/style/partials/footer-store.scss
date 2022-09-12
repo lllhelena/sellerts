@@ -1,0 +1,28 @@
+
+.store-bot{
+	margin-top: 78px;
+	border-top: 1px solid #081323;
+	padding: 40px 0 71px 0;
+	text-align: center;
+	&__text{
+		span{
+			border-bottom: 2px solid #3478F6;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+	.store-bot{
+		padding: 36px 0 38px 0;
+		&__text{
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+

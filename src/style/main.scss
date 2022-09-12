@@ -1,0 +1,23 @@
+@import "partials/reset.css";
+@import "partials/fonts.css";
+@import "partials/jquery.fancybox.min.css";
+@import "partials/slick.css";
+@import "partials/select2.css";
+
+/* my style */
+
+@import "partials/_var"; 
+
+@import "partials/mixin";
+@import "partials/components";
+@import "partials/header";
+@import "partials/header-store";
+@import "partials/main";
+@import "partials/main-store";
+@import "partials/product-card";
+
+@import "partials/product-group";
+@import "partials/modal";
+@import "partials/footer";
+@import "partials/footer-store";
+@import "partials/main-adaptive";
